@@ -6,10 +6,19 @@
     xmlns:local="clr-namespace:MvvmAppClassRef"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="/"/>
+        <!--<ShellContent
+            Title="FirstPage"
+            ContentTemplate="{DataTemplate local:FirstPage}"
+            Route="/first"/>
+        <ShellContent
+            Title="FirstPage"
+            ContentTemplate="{DataTemplate local:FirstPage}"
+            Route="/first"/>-->
+    </TabBar>
 </Shell>
 

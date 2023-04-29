@@ -51,4 +51,15 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Views\" />
+	  <None Remove="ViewModels\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Views\" />
+	  <Folder Include="ViewModels\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Prism.Core" Version="8.1.97" />
+	</ItemGroup>
 </Project>
